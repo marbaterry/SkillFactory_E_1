@@ -1,0 +1,44 @@
+{% load static %}
+
+<link href="{% static 'flatpages/hf.css' %}" rel="stylesheet">
+<!DOCTYPE html>
+<head>
+
+</head>
+<div class="header">
+        <div class="inner-header">
+            <div class="logo-container">
+                <h1>Мое хобби</h1>
+            </div>
+
+            <ul class="navigation">
+                <a href="/pages/"><li>Главная</li></a>
+                <a href="/pages/about/"><li>Обо мне</li></a>
+                <a href="/pages/contacts/"><li>Обратная связь</li></a>
+            </ul>
+        </div>
+</div>
+<div class="content">
+
+</div>
+<body>
+<div class="text">
+<p>
+    <h1>{{ flatpage.title }}</h1>
+</p>
+    <hr>
+</div>
+<div class="picture">
+<p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Bill_Gates_2018.jpg?uselang=ru" alt = "Ну, не пповезло..." width="320" height="400">
+</p>
+</div>
+<div class="text">
+<p>
+    {{ flatpage.content }}
+    {{ flatpage.content }}
+    {{ flatpage.content }}
+    {{ flatpage.content }}
+</p>
+</div>
+</body>
